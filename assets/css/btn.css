@@ -1,0 +1,39 @@
+button {
+    @apply focus:outline-none cursor-pointer flex items-center justify-center select-none text-sm md:text-base text-white
+}
+
+button:disabled {
+    @apply opacity-70
+}
+
+.btn-simple {
+    @apply w-auto
+}
+
+.btn-submit {
+    @apply w-full h-10 text-white text-sm bg-purple-500 rounded-primary
+}
+
+.base-btn-action {
+    @apply w-auto
+}
+
+.btn-action {
+    @apply px-6 py-2 text-white rounded-sm font-semibold
+}
+
+.btn-action-outline {
+    @apply w-max p-2 border rounded-sm flex gap-x-1 items-center text-xs
+}
+
+.btn-icon {
+    @apply w-10 h-10 rounded-sm shadow-primary
+}
+
+.btn-cancle{
+    @apply  w-full h-10 text-purple-500 text-sm bg-purple-700 rounded-primary
+}
+
+.loader-btn {
+  @apply w-5 h-5 border-2  border-white rounded-full animate-spin;
+}

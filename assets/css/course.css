@@ -1,0 +1,41 @@
+/* course categroy */
+.container-category {
+    @apply w-full flex flex-col gap-y-6 mt-6
+}
+
+.container-category span {
+    @apply font-bold text-purple-500 text-lg
+}
+
+.container-item {
+    @apply grid grid-cols-3 gap-x-2 gap-y-4 font-semibold text-purple-500 text-lg
+}
+
+.card-category {
+    @apply w-full h-[100px] rounded-sm flex justify-center items-center flex-col gap-y-3 px-1 border-2
+}
+
+.card-category img {
+    @apply w-8 h-8
+}
+
+.card-category span {
+    @apply text-xs font-semibold text-center
+}
+
+/* category carousel */
+.category-carousel-container {
+    @apply w-full flex h-[60px] gap-x-2
+}
+
+.category-carousel-container .category-item {
+    @apply min-w-max px-4 h-10 text-sm font-semibold text-center text-purple-500 bg-purple-100 rounded-sm flex items-center
+}
+
+.category-carousel-container .category-item a {
+    @apply w-full h-full flex items-center justify-center
+}
+
+.active-category {
+    @apply !bg-purple-500 !text-white
+}

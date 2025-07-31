@@ -1,0 +1,31 @@
+.input-global {
+    @apply w-full h-[42px] resize-none bg-white placeholder:text-xs placeholder:font-medium rounded-primary outline-none text-sm px-3 border-2 border-gray-100
+}
+
+.label-input {
+    @apply text-gray-300 text-sm pr-2 mb-1
+}
+
+.dropdown-menu {
+    @apply absolute w-full z-10 flex flex-col bg-white rounded-b-primary border-2 border-gray-100 border-t-0 py-2
+}
+
+.active-item-input {
+    @apply bg-gray-100
+}
+
+.dropdown-item {
+    @apply p-2 border-b border-gray-100 text-xs text-gray-300 last:border-b-0 cursor-pointer last:rounded-b-sm
+}
+
+.dropdown-menu .dropdown-empty {
+    @apply w-full text-center text-sm py-2
+}
+
+.input-verify {
+    @apply w-11 h-11 text-center border border-gray-100 rounded-primary flex items-center focus-visible:outline-purple-500
+}
+
+.err-input {
+    @apply text-xs text-red-700 pr-1
+}

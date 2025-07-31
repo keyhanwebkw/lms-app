@@ -1,0 +1,155 @@
+@import 'datePicker.css';
+@import 'animation.css';
+
+@font-face {
+    font-family: 'iranYekan';
+    src: url('/fonts/iranyekanweb-light.woff2') format('woff2');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'iranYekan';
+    src: url('/fonts/iranyekanweb-regular.woff2') format('woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'iranYekan';
+    src: url('/fonts/iranyekanweb-regular.woff2') format('woff2');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'iranYekan';
+    src: url('/fonts/iranyekanweb-bold.woff2') format('woff2');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'iranYekan';
+    src: url('/fonts/iranyekanweb-bold.woff2') format('woff2');
+    font-weight: 700;
+}
+
+
+@font-face {
+    font-family: 'iranYekan';
+    src: url('/fonts/iranyekanweb-bold.woff2') format('woff2');
+    font-weight: bold;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: 'iranYekan';
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    direction: rtl;
+    font-family: 'iranYekan';
+    background-color: #fff;
+}
+
+
+input::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input[type="number"]::-moz-number-spinner,
+input[type="number"]::-moz-number-spin-box {
+    display: none;
+}
+
+.dir-ltr {
+    direction: ltr;
+}
+
+.dir-rtl {
+    direction: rtl;
+}
+
+.container-flex-center {
+    @apply flex items-center justify-center
+}
+
+.container-flex-col-center {
+    @apply w-full flex flex-col items-center justify-center
+}
+
+
+.container-flex-col-items-center {
+    @apply w-full flex flex-col items-center
+}
+
+.container-auth-page {
+    @apply w-full flex flex-col items-center gap-y-4 min-h-screen justify-center
+}
+
+.prevent-select {
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+}
+
+.tooltip-box {
+    @apply absolute opacity-100 bg-purple-500 z-10 text-[12px] text-center text-white flex items-center justify-center -top-12 -right-1 w-max px-2 h-10 before:content-[''] before:w-[8px] before:h-[8px] before:bg-purple-500 before:absolute before:-bottom-1 before:left-[45%] before:rotate-45 rounded-sm
+}
+
+.primary-gap {
+    @apply gap-6
+}
+
+.second-gap {
+    @apply gap-4
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader-btn {
+    width: 20px;
+    height: 20px;
+    border: 5px solid;
+    border-color: #fff transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+.card-container {
+    @apply w-full flex justify-between items-center rounded-sm bg-white shadow-primary
+}
+
+/* for loading card pages */
+
+@keyframes shine {
+    to {
+        background-position-x: -200%;
+    }
+}
+
+.card_box_loading {
+    background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
+    background-size: 200% 100%;
+    animation: 1s shine linear infinite;
+}

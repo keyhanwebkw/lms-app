@@ -1,0 +1,60 @@
+.vpd-wrapper .vpd-container {
+    @apply w-[95%] max-w-[400px] 
+}
+
+.vpd-wrapper .vpd-container .vpd-content {
+    @apply w-full pb-3 rounded-[30px]
+}
+
+.vpd-wrapper .vpd-container .vpd-content .vpd-header {
+    font-family: 'iranYekan' !important;
+}
+
+.vpd-wrapper .vpd-container .vpd-content .vpd-header {
+    @apply rounded-t-[30px] py-4
+}
+
+.vpd-wrapper .vpd-container .vpd-content .vpd-header .vpd-date {
+    @apply text-center text-[22px]
+}
+
+.vpd-wrapper .vpd-container .vpd-content .vpd-body .vpd-month {
+    @apply w-full flex flex-col justify-center
+}
+
+.vpd-wrapper .vpd-container .vpd-content .vpd-body .vpd-month .vpd-week {
+    @apply w-full flex items-center justify-evenly
+}
+
+.vpd-wrapper .vpd-container .vpd-content .vpd-body .vpd-month .vpd-days .direction-next .vpd-clearfix,
+.vpd-wrapper .vpd-container .vpd-content .vpd-body .vpd-month .vpd-days .direction-prev .vpd-clearfix {
+    @apply w-full flex items-center justify-evenly
+}
+
+.vpd-wrapper .vpd-container .vpd-content .vpd-body .vpd-controls .vpd-month-label {
+    @apply w-auto
+}
+
+.vpd-wrapper .vpd-container .vpd-content .vpd-body .vpd-actions {
+    @apply w-full flex items-center justify-evenly mt-2 
+}
+
+.vpd-wrapper .vpd-container .vpd-content .vpd-body .vpd-actions button:nth-child(1) {
+    @apply w-20 h-10 rounded-full bg-purple-100 text-purple-300 text-[13px] lg:text-[15px] font-bold
+}
+
+.vpd-wrapper .vpd-container .vpd-content .vpd-body .vpd-actions button:nth-child(2) {
+    @apply w-20 h-10 rounded-full bg-purple-100 text-purple-300 text-[13px] lg:text-[15px] font-bold
+}
+
+.vpd-wrapper .vpd-container .vpd-content .vpd-body .vpd-actions button:nth-child(3) {
+    @apply w-[30px] h-10 rounded-full bg-purple-100 text-purple-300 text-[13px] lg:text-[15px] font-bold
+}
+
+html body span.global-rtl {
+    font-family: 'iranYekan' !important;
+}
+
+.vpd-controls .vpd-next {
+    @apply !flex !items-center !justify-end !pb-0.5
+}
