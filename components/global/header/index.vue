@@ -16,9 +16,7 @@ const handleSwitchUser = computed(() => userAuth.hasToken ? '/my-account' : '/au
             <Logo />
         </div>
         <div class="flex gap-x-4">
-            <BaseBtn type="button" type-design="icon" icon="/img/support.svg" :loading="false"
-                @click="$router.push('/support')" />
-            <BaseBtn type="button" type-design="icon" icon="/img/user.svg" :loading="false"
+            <BaseBtn type="button" type-design="icon" icon="/img/userProfile.svg" :loading="false"
                 @click="$router.push(handleSwitchUser)" />
             <!-- logout -->
             <!-- <BaseBtn type="button" type-design="icon" icon="/img/logout~.png" :loading="false"  @click="$router.push('/')"/> -->
@@ -32,6 +30,6 @@ const handleSwitchUser = computed(() => userAuth.hasToken ? '/my-account' : '/au
 }
 
 .item-back {
-    @apply text-purple-500 w-10 h-10 flex justify-center items-center cursor-pointer rounded-sm shadow-primary
+    @apply text-blue-500 w-10 h-10 flex justify-center items-center cursor-pointer rounded-sm shadow-primary
 }
 </style>

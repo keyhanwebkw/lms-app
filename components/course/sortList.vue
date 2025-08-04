@@ -77,7 +77,7 @@ useClickOutside(sortBy, () => {
 }
 
 .sort-filter-item-active {
-    @apply bg-purple-500 text-white;
+    @apply bg-blue-500 text-white;
 }
 
 .sort-filter-item-inactive {

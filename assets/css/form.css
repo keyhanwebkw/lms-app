@@ -23,7 +23,7 @@
 }
 
 .input-verify {
-    @apply w-11 h-11 text-center border border-gray-100 rounded-primary flex items-center focus-visible:outline-purple-500
+    @apply w-11 h-11 text-center border border-gray-100 rounded-primary flex items-center focus-visible:outline-blue-500
 }
 
 .err-input {

@@ -24,10 +24,10 @@ const route = useRoute();
 }
 
 .box-menu{
-    @apply w-full max-w-[380px] bg-[rgba(225,223,223,0.5)] backdrop-blur-sm shadow-primary h-[50px] rounded-[25px] flex items-center justify-between px-5
+    @apply w-full max-w-[380px] bg-[rgba(225,223,223,0.5)] backdrop-blur-sm shadow-primary h-[50px] rounded-[25px] flex items-center justify-between px-5 text-blue-500
 }
 
 .active-class{
-    @apply w-[40px] rounded-full  flex items-center justify-center  h-10 bg-purple-500
+    @apply w-[40px] rounded-full  flex items-center justify-center  h-10 bg-blue-500
 }
 </style>

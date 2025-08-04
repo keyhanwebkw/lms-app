@@ -18,7 +18,7 @@ defineProps<DataSectionThumbnail>()
 
 <style scoped>
 .container-blog-thumbnail {
-    @apply w-full flex flex-col gap-y-4 px-4 pt-6 pb-8 bg-purple-500
+    @apply w-full flex flex-col gap-y-4 px-4 pt-6 pb-8 bg-blue-500
 }
 
 .title {

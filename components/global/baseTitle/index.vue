@@ -10,7 +10,7 @@ defineProps<DataTitle>()
         <span class="base-title text-xl">{{ title }}</span>
     </div>
     <div v-else class="container-title-icon">
-        <component :is="'Icon' + icon" class="w-6 h-6 text-purple-500" />
+        <component :is="'Icon' + icon" class="w-6 h-6 text-blue-500" />
         <span class="base-title">{{ title }}</span>
     </div>
 
@@ -22,10 +22,10 @@ defineProps<DataTitle>()
 }
 
 .container-title-icon {
-    @apply flex gap-x-3 border-b-2 pb-2 items-center border-purple-500
+    @apply flex gap-x-3 border-b-2 pb-2 items-center border-blue-500
 }
 
 .base-title {
-    @apply text-purple-500 font-bold
+    @apply text-blue-500 font-bold
 }
 </style>

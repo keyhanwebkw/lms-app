@@ -140,7 +140,7 @@ useInfiniteScrollObserver(observerTargetRelated, handleListRelated)
 
               <div class="w-full flex justify-center">
                 <BaseBtn @click="dataComment.handleShowComment()" type="button" type-design="action"
-                  custom-design="bg-purple-100 !text-purple-500 !w-auto"
+                  custom-design="bg-blue-100 !text-blue-500 !w-auto"
                   :text="dataComment.showAllCommentOriginal ? $t('global.view_more') : $t('global.view_less')"
                   v-if="dataComment.allComment.length > 3" />
               </div>
@@ -167,7 +167,7 @@ useInfiniteScrollObserver(observerTargetRelated, handleListRelated)
 
 <style scoped>
 .container-box-info-details-course {
-  @apply w-full px-4 py-5 bg-purple-500 flex flex-col gap-y-5 mt-3;
+  @apply w-full px-4 py-5 bg-blue-500 flex flex-col gap-y-5 mt-3;
 }
 
 .container-box-info-details-course .container-center-item {
@@ -175,7 +175,7 @@ useInfiniteScrollObserver(observerTargetRelated, handleListRelated)
 }
 
 .container-add-to-cart .box-price {
-  @apply w-full py-3 font-semibold rounded-primary flex items-center justify-center text-sm max-w-[300px] bg-white text-purple-500;
+  @apply w-full py-3 font-semibold rounded-primary flex items-center justify-center text-sm max-w-[300px] bg-white text-blue-500;
 }
 
 .container-box-info-details-course .container-add-to-cart {

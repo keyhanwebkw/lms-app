@@ -52,7 +52,7 @@ async function downloadFileWithApi(url: string) {
 
                 <div class="container-btn">
                     <BaseBtn type="button" :text="$t('course.assignment.download_assignment')"
-                        custom-design="bg-purple-500 text-white" type-design="action"
+                        custom-design="bg-blue-500 text-white" type-design="action"
                         @click="downloadFileWithApi(fileUrl)" v-if="dataContentAssignment.content" />
 
                     <BaseBtn type="button" :text="$t('global.close')" custom-design="bg-red-500 text-white"

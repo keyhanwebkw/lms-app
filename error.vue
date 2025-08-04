@@ -30,9 +30,9 @@ function goBack() {
          </p>
          <div class="btn-container">
             <BaseBtn type="button" type-design="outline-action" :text="$t('global.back_to_home')"
-               customDesign=" border-purple-500 !text-purple-500 !text-sm" @click="backToHome" />
+               customDesign=" border-blue-500 !text-blue-500 !text-sm" @click="backToHome" />
             <BaseBtn type="button" type-design="action" :text="$t('global.back')"
-               customDesign="!w-max bg-purple-500 !text-sm" @click="goBack" />
+               customDesign="!w-max bg-blue-500 !text-sm" @click="goBack" />
          </div>
       </div>
    </main>

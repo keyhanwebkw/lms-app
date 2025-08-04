@@ -9,7 +9,7 @@ const props = defineProps<DataFactor>()
     <div class="container-factor">
         <div class="box-factor">
             <!-- title -->
-            <div class="w-full flex justify-center font-semibold text-purple-500">
+            <div class="w-full flex justify-center font-semibold text-blue-500">
                 <span> {{ $t('purchaseProcess.factor_order') }}</span>
             </div>
             <!-- basePrice -->
@@ -23,7 +23,7 @@ const props = defineProps<DataFactor>()
                 </div>
             </div>
             <!-- discount Price -->
-            <div class="items-factor text-purple-500 text-sm">
+            <div class="items-factor text-blue-500 text-sm">
                 <div>
                     {{ $t('purchaseProcess.discount_price') }}
                 </div>
@@ -37,7 +37,7 @@ const props = defineProps<DataFactor>()
 
             </div>
             <!-- discount Price -->
-            <div class="items-factor text-purple-500 text-sm">
+            <div class="items-factor text-blue-500 text-sm">
                 <div>
                     {{ $t('purchaseProcess.total_amount') }}
                 </div>

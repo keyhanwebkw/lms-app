@@ -58,52 +58,6 @@ const test = ref([
     }
 ])
 
-
-const dataList = ref([
-    {
-        ID: 1,
-        name: 'دوره جامع فرزند پروری شاه کلید ',
-        teacherID: 1212,
-        price: 9000000,
-        studyTime: 134,
-        image: '/img/course.png'
-    },
-    {
-        ID: 1,
-        name: 'دوره جامع فرزند پروری شاه کلید ',
-        teacherID: 1212,
-        price: 9000000,
-        studyTime: 134,
-        image: '/img/course.png'
-    },
-    {
-        ID: 1,
-        name: 'دوره جامع فرزند پروری شاه کلید ',
-        teacherID: 1212,
-        price: 9000000,
-        studyTime: 134,
-        image: '/img/course.png'
-    },
-    {
-        ID: 1,
-        name: 'دوره جامع فرزند پروری شاه کلید ',
-        teacherID: 1212,
-        price: 9000000,
-        studyTime: 134,
-        image: '/img/course.png'
-    },
-])
-
-
-const dataTecher = ref([
-    {
-        ID: 1212,
-        name: 'علیرضا ',
-        family: 'زنگنه'
-    }
-])
-
-
 const dataBanner = ref([
     {
         id: 1,
@@ -122,37 +76,281 @@ const dataBanner = ref([
     },
 ])
 
+const descriptionHero = ref<string>('لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.')
+
+const poster = ref({
+    SID: "dA000000-0000-0000-0000-00000avatar1",
+    duration: 0,
+    extension: "png",
+    fileName: "avatar1",
+    fileSize: 7963,
+    fileType: "image",
+    fullSID: "dA000000-0000-0000-0000-00000avatar1.png",
+    height: 160,
+    width: 106,
+})
+
+
+const statictis = ref([
+    {
+        color: "#3c5aff",
+        count: 1,
+        created_at: 1732131563,
+        description: "نسن کبت شسختنشپسذر",
+        icon: "/img/images.jpg",
+        id: 10,
+        order: 1,
+        title: "تست شماره اول",
+        translations: [{ id: 11, home_page_statistic_id: 10, locale: "fa", title: "تست شماره اول" }]
+    },
+    {
+        color: "#ce2424",
+        count: 1,
+        created_at: 1732131563,
+        description: "نسن کبت شسختنشپسذر",
+        icon: "/img/images.jpg",
+        id: 10,
+        order: 1,
+        title: "تست شماره دوم",
+        translations: [{ id: 11, home_page_statistic_id: 10, locale: "fa", title: "تست شماره ذوم" }]
+
+    },
+    {
+        color: "#ff7037",
+        count: 1,
+        created_at: 1732131563,
+        description: "نسن کبت شسختنشپسذر",
+        icon: "/img/images.jpg",
+        id: 10,
+        order: 1,
+        title: "تست شماره سوم",
+        translations: [{ id: 11, home_page_statistic_id: 10, locale: "fa", title: "تست شماره سوم" }]
+
+    },
+])
+
+
+const secendStatictis = ref([
+    {
+        color: "#ce2424",
+        count: 1,
+        created_at: 1732131563,
+        description: "نسن کبت شسختنشپسذر",
+        icon: "/img/images.jpg",
+        id: 10,
+        order: 1,
+        title: "تست شماره دوم",
+        translations: [{ id: 11, home_page_statistic_id: 10, locale: "fa", title: "تست شماره ذوم" }]
+
+    },
+    {
+        color: "#ff7037",
+        count: 1,
+        created_at: 1732131563,
+        description: "نسن کبت شسختنشپسذر",
+        icon: "/img/images.jpg",
+        id: 10,
+        order: 1,
+        title: "تست شماره سوم",
+        translations: [{ id: 11, home_page_statistic_id: 10, locale: "fa", title: "تست شماره سوم" }]
+
+    },
+])
+
+
+const listFaq = ref([
+    {
+        ID: 1,
+        question: 'این متن برای سوال می باشد ',
+        answer: 'این متن برای پاسخ می باش'
+    },
+    {
+        ID: 2,
+        question: 'این متن برای سوال می باشد ',
+        answer: 'این متن برای پاسخ می باش'
+    },
+    {
+        ID: 3,
+        question: 'این متن برای سوال می باشد ',
+        answer: 'این متن برای پاسخ می باش'
+    },
+])
+const descriptionVideo = ref<string>('لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است ')
+
+const dataListBlog = ref([
+    {
+        author: { id: 1020, full_name: "test" },
+        author_id: 1020,
+        category: { id: 1, title: "کوچ", slug: "o" },
+        category_id: 1,
+        content: "<p style=\"margin: 15px 0px 1.3em; padding: 0px; ",
+        created_at: 1731842604,
+        description: "<ul><li>جلسات کوچینگ تیمی برای دست یافتن به یک منشور تیمی استفاده شده و به تیم کمک می‌کند تا عملکرد بهتر و سریع‌تری داشت</li></ul>",
+        enable_comment: 1,
+        ID: 2,
+        image: "/img/images.jpg",
+        meta_description: null,
+        slug: "mozsh-o-n-roh",
+        status: "publish",
+        title: "اهمیت کوچینگ تیمی",
+        translations: [{
+            blog_id: 2,
+            content: "<p style=\"margin: 15px 0px 1.3em; padding: 0px; ",
+            description: "<ul><li>جلسات کوچینگ تیمی برای دست یافتن به یک منشور تیمی استفاده شده و به تیم کمک می‌کند تا عملکرد بهتر و سریع‌تری داشت</li></ul>",
+            id: 2,
+            meta_description: null,
+            title: "اهمیت کوچینگ تیمی",
+        }],
+        updated_at: 1736151305,
+        visit_count: 1,
+        name: 'علیرضا'
+    }
+])
+
+const categoryBlog = ref([
+    {
+        id: 1,
+        title: 'اموزشی',
+        slug: '/'
+    },
+    {
+        id: 1,
+        title: 'اموزشی',
+        slug: '/'
+    },
+])
+const DataListCourse = ref([
+    {
+        ID: 1,
+        image_cover: '/img/images.jpg',
+        title: 'دوره آموزش امنبت وب ',
+        description: 'این متن  متن توضیحات برای تست این بخش نوشته شده است  و لطفا جدی نگیرین',
+        type: "course",
+        teacher: {
+            full_name: 'علیرضا زنگنه',
+            id: 1
+        },
+        duration: 20,
+        points: 50,
+        capacity: 20,
+        price: 253000,
+        thumbnail: '/img/images.jpg',
+        slug: '/'
+    }, {
+        ID: 1,
+        image_cover: '/img/images.jpg',
+        title: 'دوره آموزش امنبت وب ',
+        description: 'این متن  متن توضیحات برای تست این بخش نوشته شده است  و لطفا جدی نگیرین',
+        type: "course",
+        teacher: {
+            full_name: 'علیرضا زنگنه',
+            id: 1
+        },
+        duration: 20,
+        points: 50,
+        capacity: 20,
+        price: 253000,
+        thumbnail: '/img/images.jpg',
+        slug: '/'
+    }, {
+        ID: 1,
+        image_cover: '/img/images.jpg',
+        title: 'دوره آموزش امنبت وب ',
+        description: 'این متن  متن توضیحات برای تست این بخش نوشته شده است  و لطفا جدی نگیرین',
+        type: "course",
+        teacher: {
+            full_name: 'علیرضا زنگنه',
+            id: 1
+        },
+        duration: 20,
+        points: 50,
+        capacity: 20,
+        price: 253000,
+        thumbnail: '/img/images.jpg',
+        slug: '/'
+    },
+
+])
+
+
+const dataListBanner = ref([
+    {
+        banner: {
+            SID: "d10232e8-0e18-4c06-b3ab-ab95d33a9851",
+            duration: 0,
+            extension: "webp",
+            fileName: "Screen Shot 1404-05-04 at 10.15.11 AM",
+            fileSize: 394917,
+            fileType: "image",
+            fullSID: "/img/banner.webp",
+            height: 1416,
+            width: 2492,
+        },
+
+        link: "https://jsonformatter.org/json-pretty-print"
+    },
+    {
+        banner: {
+            SID: "d10232e8-0e18-4c06-b3ab-ab95d33a9851",
+            duration: 0,
+            extension: "webp",
+            fileName: "Screen Shot 1404-05-04 at 10.15.11 AM",
+            fileSize: 394917,
+            fileType: "image",
+            fullSID: "/img/banner2.webp",
+            height: 1416,
+            width: 2492,
+        },
+
+        link: "https://jsonformatter.org/json-pretty-print"
+    },
+    {
+        banner: {
+            SID: "d10232e8-0e18-4c06-b3ab-ab95d33a9851",
+            duration: 0,
+            extension: "webp",
+            fileName: "Screen Shot 1404-05-04 at 10.15.11 AM",
+            fileSize: 394917,
+            fileType: "image",
+            fullSID: "/img/banner3.webp",
+            height: 1416,
+            width: 2492,
+        },
+
+        link: "https://jsonformatter.org/json-pretty-print"
+    },
+])
 </script>
 
 <template>
     <div class="container-home-page">
+        <div class="w-full">
+            <HomeSliderBanner :data-list="dataListBanner" />
+        </div>
         <div class="container-privigeles">
-            <HomePrivigeles :score="1354" type="score" />
-            <HomePrivigeles :price="25000" type="wallet" />
-        </div>
-        <div class="conatainer-info-child">
-            <HomeManagmentChild />
+            <HomeHero title="علیرضا زنگنه بایگی " :description="descriptionHero" :poster-s-i-d="poster" />
         </div>
         <div class="w-full">
-            <HomeInfoChild name="علیرضا" family="زنگنه" image="/img/profile1.png" />
-        </div>
-        <div class="conatainer-item">
-            <span class="title-item">{{ $t('home.quick_access') }}</span>
-            <div class="container-quick-access">
-                <HomeQuickAccess :data-list="data" v-for="data in test" :key="data.ID" />
-            </div>
-        </div>
-        <div class="conatainer-item">
-            <span class="title-item ">{{ $t('home.latest_courses') }}</span>
-            <!-- <HomeSliderCourse :data-list="dataList" :data-list-teacher="dataTecher" /> -->
+            <HomeSliderFeature :data-list-feature="statictis" />
         </div>
         <div class="w-full">
-            <HomeSliderBanner :data-list="dataBanner" />
+            <HomeVideo title="تست ویدیو" :description="descriptionVideo" hero_vector="/video/test.mp4"
+                :feature="secendStatictis" />
         </div>
-        <div class="conatainer-item">
-            <span class="title-item ">{{ $t('home.latest_articles') }}</span>
-            <!-- <HomeSliderBlog :data-list="dataBlog" /> -->
+        <div class="w-full">
+            <HomeFaq title="سوالات کاربران" :list-faq="listFaq" />
         </div>
+        <div class="w-full">
+            <HomeLatestCourse page-title="دوره های آموزشی" :data-list="DataListCourse" />
+        </div>
+        <div class="w-full">
+            <HomeBookMeeting title="رزرو جلسه آموزشی" background="/img/images.jpg" link="/"
+                :description="descriptionVideo" />
+        </div>
+        <div class="w-full">
+            <HomeLatestBlog :data-list="dataListBlog" :data-list-category="categoryBlog" />
+        </div>
+
     </div>
 </template>
 

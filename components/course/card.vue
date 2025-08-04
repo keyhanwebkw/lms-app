@@ -27,7 +27,7 @@ const courseBanner = computed(() => {
                     <span class="text-xs">{{ course.teacher.name }}{{ course.teacher.family }}</span>
                 </div>
                 <div class="flex justify-between">
-                    <span class="text-sm text-purple-500">{{ separate(course.price) }} {{ $t('global.unit') }}</span>
+                    <span class="text-sm text-blue-500">{{ separate(course.price) }} {{ $t('global.unit') }}</span>
                     <div class="text-red-500 flex items-center gap-x-1">
                         <IconTime />
                         <div class="text-xs flex gap-x-1"><span>{{ course.duration }}</span><span>{{

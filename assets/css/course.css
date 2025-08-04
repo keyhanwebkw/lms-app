@@ -4,11 +4,11 @@
 }
 
 .container-category span {
-    @apply font-bold text-purple-500 text-lg
+    @apply font-bold text-blue-500 text-lg
 }
 
 .container-item {
-    @apply grid grid-cols-3 gap-x-2 gap-y-4 font-semibold text-purple-500 text-lg
+    @apply grid grid-cols-3 gap-x-2 gap-y-4 font-semibold text-blue-500 text-lg
 }
 
 .card-category {
@@ -29,7 +29,7 @@
 }
 
 .category-carousel-container .category-item {
-    @apply min-w-max px-4 h-10 text-sm font-semibold text-center text-purple-500 bg-purple-100 rounded-sm flex items-center
+    @apply min-w-max px-4 h-10 text-sm font-semibold text-center text-blue-500 bg-blue-100 rounded-sm flex items-center
 }
 
 .category-carousel-container .category-item a {
@@ -37,5 +37,5 @@
 }
 
 .active-category {
-    @apply !bg-purple-500 !text-white
+    @apply !bg-blue-500 !text-white
 }

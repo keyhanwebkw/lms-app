@@ -30,7 +30,7 @@ const props = defineProps<DataCardAuthorBlog>()
 }
 
 .title-card-auther {
-    @apply text-purple-500 font-bold
+    @apply text-blue-500 font-bold
 }
 
 .container-data-auther {
@@ -42,7 +42,7 @@ const props = defineProps<DataCardAuthorBlog>()
 }
 
 .box-avatar-auther img {
-    @apply w-full h-full rounded-full border border-purple-500 object-cover
+    @apply w-full h-full rounded-full border border-blue-500 object-cover
 }
 
 .container-info-auther {

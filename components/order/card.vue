@@ -60,7 +60,7 @@ props.orders.items.forEach((order: DetailsItemProductOrder) => {
                 </div>
             </div>
             <!-- show factor -->
-            <div class="flex gap-x-2 items-center text-purple-500 text-sm">
+            <div class="flex gap-x-2 items-center text-blue-500 text-sm">
                 <IconFolder />
                 <NuxtLink to="/">{{ $t('order.show_factor') }}</NuxtLink>
             </div>

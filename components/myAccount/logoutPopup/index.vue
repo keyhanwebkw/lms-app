@@ -14,7 +14,7 @@ const logoutData = LogoutUser()
     :title="$t('auth.logout')" 
     :subtitle="$t('auth.are_you_logout')" 
     :status="logoutData.showPopup"
-    titleClass="lg:text-lg font-bold text-center text-purple-500"
+    titleClass="lg:text-lg font-bold text-center text-blue-500"
     subtitleClass="lg:text-[14px]  text-center text-gray-500"
     v-if="logoutData.showPopup" 
     @close="logoutData.showPopup = false">

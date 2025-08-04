@@ -145,7 +145,7 @@ const files = filterFilesByType('file');
 }
 
 .container-download-attached-file {
-    @apply w-full flex items-center justify-end gap-x-2 text-purple-500
+    @apply w-full flex items-center justify-end gap-x-2 text-blue-500
 }
 
 .container-download-attached-file a {

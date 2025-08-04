@@ -16,7 +16,7 @@ const props = defineProps<DataInventoryWallet>()
             <span>{{ separate(balance) }} {{ $t('global.unit') }}</span>
         </div>
         <div>
-            <BaseBtn type="button"  typeDesign="simple" customDesign="bg-purple-500 !text-sm py-2 px-4 rounded-[30px]" :loading="loading" :text="$t('my_account.wallet.transaction_history.increment')"/>
+            <BaseBtn type="button"  typeDesign="simple" customDesign="bg-blue-500 !text-sm py-2 px-4 rounded-[30px]" :loading="loading" :text="$t('my_account.wallet.transaction_history.increment')"/>
         </div>
     </div>
 </template>

@@ -36,7 +36,7 @@ const props = defineProps<CheckBox>()
   }
   
   .radio-container.radio-checked .label-text {
-    @apply text-purple-500
+    @apply text-blue-500
   }
   
   input[type='radio'] {
@@ -44,11 +44,11 @@ const props = defineProps<CheckBox>()
   }
   
   .checkmark {
-    @apply h-[18px] w-[18px] border-[2px] rounded-full relative border-purple-500
+    @apply h-[18px] w-[18px] border-[2px] rounded-full relative border-blue-500
   }
   
   input[type='radio']:checked + .checkmark {
-   @apply bg-purple-500
+   @apply bg-blue-500
   }
   
   </style>

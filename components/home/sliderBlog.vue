@@ -1,17 +1,18 @@
 <script setup lang="ts">
-// import { Swiper, SwiperSlide } from 'swiper/vue';
-import type { DataSliderCardBlog } from '~/types/blog';
+import type { DataSliderCardBlog } from '~/types/home';
 
-const props = defineProps<DataSliderCardBlog>();
+ defineProps<DataSliderCardBlog>()
 </script>
 
 <template>
-    <Swiper class="w-full py-3 " :pagination="true" :slides-per-view="2" :loop="true" :autoplay="{
+    <Swiper class="w-full py-3 " :pagination="true" :slides-per-view="1" :loop="true" :autoplay="{
         delay: 4000,
         disableOnInteraction: false,
     }" :space-between="10">
-        <SwiperSlide v-for="data in props.dataList" :key="data.ID">
-            <BlogHomePageCard :data-list="data" />
-        </SwiperSlide>
+          <SwiperSlide v-for="data in dataList" :key="data.ID" class="w-full flex justify-center">
+                <HomeCardBlog :data-list="data" :data-list-category="dataListCategory" />
+            </SwiperSlide>
+
     </Swiper>
 </template>
+

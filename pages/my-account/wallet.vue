@@ -25,7 +25,7 @@ const dataList = ref<DetailsTransactionHistoryOnline[]>([
             <MyAccountWallet :balance="50000" />
         </div>
         <div class="container-card gap-y-3">
-            <span class="text-purple-500 font-semibold">{{ $t('my_account.wallet.history_payments') }}</span>
+            <span class="text-blue-500 font-semibold">{{ $t('my_account.wallet.history_payments') }}</span>
             <MyAccountTransactionHistoryCardOnline :dataList="data"  v-for="data in dataList" :key="data.ID"/>
         </div>
     </div>

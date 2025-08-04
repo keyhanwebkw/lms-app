@@ -46,6 +46,6 @@ const dataChangePassword = ChangePassword()
 }
 
 .btn-submit {
-    @apply bg-purple-500 !text-sm text-white !px-10
+    @apply bg-blue-500 !text-sm text-white !px-10
 }
 </style>

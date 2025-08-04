@@ -64,7 +64,7 @@ defineProps<{ data: DetailsCardBlog }>()
 }
 
 .container-category .item-category {
-    @apply px-4 py-1 rounded-full bg-purple-100 text-[10px] text-purple-500
+    @apply px-4 py-1 rounded-full bg-blue-100 text-[10px] text-blue-500
 }
 
 .container-card-blog .container-bottom-card {
@@ -72,7 +72,7 @@ defineProps<{ data: DetailsCardBlog }>()
 }
 
 .container-card-blog .view-more {
-    @apply text-sm text-purple-500
+    @apply text-sm text-blue-500
 }
 
 .container-card-blog .study-time {

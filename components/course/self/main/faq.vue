@@ -13,15 +13,15 @@ const active = computed(() => self.activeFaq == props.dataFaq.ID)
     <div class="container-faq">
         <!-- question -->
         <div class="container-question" @click="self.handleActiveFaq(dataFaq.ID)">
-            <div class="content" :class="active ? 'text-purple-500' : 'text-gray-500'">
+            <div class="content" :class="active ? 'text-blue-500' : 'text-gray-500'">
                 <div class="flex justify-center">
                     <IconItemFaq />
-                    <div class="line" :class="active ? 'bg-purple-500' : 'bg-gray-500'"></div>
+                    <div class="line" :class="active ? 'bg-blue-500' : 'bg-gray-500'"></div>
                 </div>
                 <span>{{ dataFaq.question }}</span>
             </div>
             <div class="box-arrow"
-                :class="active ? 'text-purple-500 border-purple-500 ' : 'text-gray-500 border-gray-300 '">
+                :class="active ? 'text-blue-500 border-blue-500 ' : 'text-gray-500 border-gray-300 '">
                 <IconArrow :class="active ? 'rotate-[270deg] transition-all duration-300' : ''" />
             </div>
         </div>

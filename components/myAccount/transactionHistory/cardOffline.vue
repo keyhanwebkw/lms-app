@@ -12,10 +12,10 @@ const props = defineProps<DataTransactionHistory>()
         <!-- right card -->
         <div class="gap-item primary-gap">
             <div class="flex gap-x-2 ">
-                <span class="w-[25px] h-[25px] rounded-full bg-purple-100 text-purple-500 container-flex-center">
+                <span class="w-[25px] h-[25px] rounded-full bg-blue-100 text-blue-500 container-flex-center">
                     {{ count }}
                 </span>
-                <span class="text-purple-500">
+                <span class="text-blue-500">
                     {{ dataList.bankName }}
                 </span>
             </div>

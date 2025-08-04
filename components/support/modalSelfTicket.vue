@@ -27,6 +27,6 @@ const props = defineProps<{
 }
 
 .close-popup {
-  @apply absolute top-3 right-3 text-purple-500 cursor-pointer;
+  @apply absolute top-3 right-3 text-blue-500 cursor-pointer;
 }
 </style>
