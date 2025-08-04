@@ -33,7 +33,7 @@ const inputValue = computed({
 
 const borderInputData = ref({
   defult: 'border-colorGray300',
-  focus: 'border-purple-300',
+  focus: 'border-blue-300',
   disabled: '',
   error: '!border-red-500',
 })

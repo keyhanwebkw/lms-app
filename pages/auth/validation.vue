@@ -60,7 +60,7 @@ function handleDelete(event: Event) {
                             <span>{{ $t('auth.resend_code')
                             }}</span>
                         </div>
-                        <div v-else @click="verifyPhoneStore.resendCode" class="text-purple-500 cursor-pointer">
+                        <div v-else @click="verifyPhoneStore.resendCode" class="text-blue-500 cursor-pointer">
                             {{
                                 $t('auth.resend_code')
                             }}
@@ -89,6 +89,6 @@ function handleDelete(event: Event) {
 }
 
 .container-verify-phone-page .resend-code-box {
-    @apply w-full flex items-center justify-end text-xs gap-x-0.5 font-semibold text-purple-500 mt-1
+    @apply w-full flex items-center justify-end text-xs gap-x-0.5 font-semibold text-blue-500 mt-1
 }
 </style>

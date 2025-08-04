@@ -20,7 +20,7 @@ const routeName = computed(() => String(route.name))
                 <NuxtImg src="/img/auth.webp" alt="avatar" />
             </div>
             <div>
-                <span class="font-semibold text-purple-500">{{ $t(`pages.${routeName}`) }}</span>
+                <span class="font-semibold text-blue-500">{{ $t(`pages.${routeName}`) }}</span>
             </div>
             <div>
                 <p class="text-xs text-gray-300 text-center">{{ description }}</p>

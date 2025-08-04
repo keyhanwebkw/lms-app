@@ -134,8 +134,8 @@ export interface CheckBox {
 export interface ReadMore {
     fullText: string
     maxWords: number
-    title: string
-    icon: string
+    title?: string
+    icon?: string
 }
 
 export interface StorageResourceType {
@@ -229,4 +229,10 @@ export interface Basemodal {
   subtitle?: string;
   titleClass?: string;
   subtitleClass?: string;
+}
+
+
+export interface titleSite {
+    title: string | undefined
+    icon?: string
 }

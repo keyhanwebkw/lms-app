@@ -9,7 +9,7 @@
             {{ $t('global.page_not_found') }}
         </span>
         <div class="mt-7">
-            <BaseBtn type="button" :text="$t('global.back')" custom-design="bg-purple-500 text-white"
+            <BaseBtn type="button" :text="$t('global.back')" custom-design="bg-blue-500 text-white"
                 type-design="action" @click="$router.back()" />
         </div>
     </div>

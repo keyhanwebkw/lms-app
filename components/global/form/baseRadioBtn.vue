@@ -53,11 +53,11 @@ const handleChange = (e: Event) => {
 }
 
 .radio-input:checked+.radio-custom {
-    @apply border-purple-500
+    @apply border-blue-500
 }
 
 .radio-input:checked+.radio-custom::after {
-    @apply w-2 h-2 rounded-full bg-purple-500 content-['']
+    @apply w-2 h-2 rounded-full bg-blue-500 content-['']
 }
 
 .radio-input:disabled+.radio-custom {

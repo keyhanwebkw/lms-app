@@ -65,6 +65,6 @@ const pushToAllPage = () => {
 }
 
 ::-webkit-scrollbar-thumb {
-    @apply bg-purple-500 rounded-primary
+    @apply bg-blue-500 rounded-primary
 }
 </style>

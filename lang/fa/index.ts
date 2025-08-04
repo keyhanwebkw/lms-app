@@ -71,6 +71,7 @@ export default {
         quick_access: 'دسترسی سریع',
         latest_courses: 'آخرین دوره ها',
         latest_articles: 'آخرین مقالات',
+        book_meeting: 'رزرو جلسه'
     },
 
     order: {
@@ -100,6 +101,7 @@ export default {
     course: {
         all_courses: 'همه دوره ها',
         empty_list: 'دوره ای یافت نشد!',
+        title:'دوره آموزشی',
         quizze: {
             back_to_course: 'بازگشت به دوره',
             number_of_question: 'تعداد سوالات',
@@ -124,7 +126,8 @@ export default {
             score_received: 'امتیاز دریافتی',
             true_answers: 'پاسخ‌های صحیح',
             false_answers: 'پاسخ‌های غلط',
-            skipped_answers: 'سوالات بدون پاسخ'
+            skipped_answers: 'سوالات بدون پاسخ',
+          
         },
 
         assignment: {

@@ -16,7 +16,7 @@ const props = defineProps<popup>()
                 <div class="popup-form">
                     <div class="header-popup-form">
                         <IconWarning />
-                        <span class="lg:text-lg font-bold text-center text-purple-500">{{ title }}</span>
+                        <span class="lg:text-lg font-bold text-center text-blue-500">{{ title }}</span>
                         <span class="lg:text-md  text-center text-gray-500">{{ subtitle }}</span>
                     </div>
                     <div class="w-full">

@@ -40,7 +40,7 @@ const props = defineProps<InfoUserGallery>()
 }
 
 .title-parent{
-    @apply font-semibold text-purple-500
+    @apply font-semibold text-blue-500
 }
 
 .title-child{

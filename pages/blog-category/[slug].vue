@@ -39,7 +39,7 @@ useInfiniteScrollObserver(observerTarget, dataBlog.loadNextPage)
         <EmptyList v-if="dataBlog.list.length === 0" icon="IconCourses" :text="$t('blog.empty_list')" />
         <div v-else>
             <div class="container-blog">
-                <h1 class="text-lg text-purple-500 font-semibold">
+                <h1 class="text-lg text-blue-500 font-semibold">
                     {{ dataBlog.category.details.title || $t('my_account.blog.title') }}
                 </h1>
                 <div class="container-blog  gap-y-3">

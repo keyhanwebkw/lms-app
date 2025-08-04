@@ -8,7 +8,7 @@ defineProps<{ title: string, link: string }>()
     <div class="add-new-btn-container">
         <div class="add-new-box">
             <BaseBtn type="button" type-design="action" :text="'+ ' + title"
-                customDesign="bg-purple-500 !text-sm !rounded-full" @click="navigateTo(link)" />
+                customDesign="bg-blue-500 !text-sm !rounded-full" @click="navigateTo(link)" />
         </div>
     </div>
 </template>

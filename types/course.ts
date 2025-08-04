@@ -124,7 +124,7 @@ export interface DataListFaq {
     dataFaq: DetailsFaq
 }
 
-interface DetailsFaq {
+export interface DetailsFaq {
     ID: number
     question: string
     answer: string

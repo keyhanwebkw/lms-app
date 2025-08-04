@@ -7,7 +7,7 @@ const props = defineProps<Logo>()
 <template>
 
     <NuxtLink  to="/" :class="customClass">
-        <NuxtImg src="/img/logo.webp" alt="logo" class="w-[200px] h-[70px]  object-cover" />
+        <NuxtImg src="/img/logokw.png" alt="logo" class="w-[150px] h-[50px]  object-cover" />
     </NuxtLink>
 
 </template>

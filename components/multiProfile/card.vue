@@ -32,6 +32,6 @@ defineProps<DataListCardMultiType>()
 }
 
 .title-card {
-    @apply w-full flex justify-center items-center font-bold text-purple-500
+    @apply w-full flex justify-center items-center font-bold text-blue-500
 }
 </style>

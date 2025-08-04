@@ -24,6 +24,6 @@ enterPassStore.clearCatch()
 
 <style scoped>
 .text-forget-password {
-    @apply text-purple-500 font-semibold text-xs
+    @apply text-blue-500 font-semibold text-xs
 }
 </style>

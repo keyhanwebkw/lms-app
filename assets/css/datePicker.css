@@ -40,15 +40,15 @@
 }
 
 .vpd-wrapper .vpd-container .vpd-content .vpd-body .vpd-actions button:nth-child(1) {
-    @apply w-20 h-10 rounded-full bg-purple-100 text-purple-300 text-[13px] lg:text-[15px] font-bold
+    @apply w-20 h-10 rounded-full bg-blue-100 text-blue-300 text-[13px] lg:text-[15px] font-bold
 }
 
 .vpd-wrapper .vpd-container .vpd-content .vpd-body .vpd-actions button:nth-child(2) {
-    @apply w-20 h-10 rounded-full bg-purple-100 text-purple-300 text-[13px] lg:text-[15px] font-bold
+    @apply w-20 h-10 rounded-full bg-blue-100 text-blue-300 text-[13px] lg:text-[15px] font-bold
 }
 
 .vpd-wrapper .vpd-container .vpd-content .vpd-body .vpd-actions button:nth-child(3) {
-    @apply w-[30px] h-10 rounded-full bg-purple-100 text-purple-300 text-[13px] lg:text-[15px] font-bold
+    @apply w-[30px] h-10 rounded-full bg-blue-100 text-blue-300 text-[13px] lg:text-[15px] font-bold
 }
 
 html body span.global-rtl {

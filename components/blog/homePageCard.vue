@@ -15,7 +15,7 @@ import { limitWord } from '~/func/limitWords';
                 {{ limitWord({ sentens: dataList.title, count: 7 }) }}
             </NuxtLink>
             <div class="w-full flex justify-between text-xs">
-                <NuxtLink to="" class="text-purple-500 cursor-pointer">{{ $t('global.view_more') }}</NuxtLink>
+                <NuxtLink to="" class="text-blue-500 cursor-pointer">{{ $t('global.view_more') }}</NuxtLink>
                 <span class="text-gray-500">{{ dataList.readingTime }} {{ $t('global.minute') }} {{ $t('global.study')
                     }}</span>
             </div>

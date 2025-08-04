@@ -2,7 +2,7 @@
     <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
             d="M8.95857 1.70852L2.02857 7.25852C1.24857 7.87852 0.748571 9.18852 0.918571 10.1685L2.24857 18.1285C2.48857 19.5485 3.84857 20.6985 5.28857 20.6985H16.4886C17.9186 20.6985 19.2886 19.5385 19.5286 18.1285L20.8586 10.1685C21.0186 9.18852 20.5186 7.87852 19.7486 7.25852L12.8186 1.71852C11.7486 0.858521 10.0186 0.858521 8.95857 1.70852Z"
-            stroke="#913175" stroke-opacity="0.7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            stroke="currentcolor" stroke-opacity="0.7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
     </svg>
 
 </template>

@@ -22,7 +22,7 @@ useClickOutside(morebox, () => {
                 <NuxtImg :src="$config.public.storage.thumbnail + data.avatarSID.fullSID" :alt="data.name" />
             </div>
             <div class="flex flex-col gap-y-2">
-                <span class="text-sm font-semibold text-purple-500">
+                <span class="text-sm font-semibold text-blue-500">
                     {{ data.name }}
                 </span>
                 <BaseBtn type="button" type-design="action" customDesign="!text-xs bg-orange-300 !px-2 !py-1"

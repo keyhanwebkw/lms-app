@@ -35,6 +35,6 @@
 </template>
 <style scoped>
 .container-box-info-details-course {
-    @apply w-full bg-purple-500 px-4 py-5 flex flex-col items-center gap-y-5 mt-3;
+    @apply w-full bg-blue-500 px-4 py-5 flex flex-col items-center gap-y-5 mt-3;
 }
 </style>

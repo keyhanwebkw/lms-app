@@ -91,7 +91,7 @@ useInfiniteScrollObserver(observerTargetRelated, handleListRelated)
 
                             <div class="w-full flex justify-center">
                                 <BaseBtn @click="dataComment.handleShowComment()" type="button" type-design="action"
-                                    custom-design="bg-purple-100 !text-purple-500 !w-auto"
+                                    custom-design="bg-blue-100 !text-blue-500 !w-auto"
                                     :text="dataComment.showAllCommentOriginal ? $t('global.view_more') : $t('global.view_less')"
                                     v-if="dataComment.allComment.length > 3" />
                             </div>

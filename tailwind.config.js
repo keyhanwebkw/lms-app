@@ -19,13 +19,12 @@ export default {
       xl: "1200px",
       xxl: "1440px",
     },
+    backgroundImage: {
+      'bg-auth': "url('/img/png/bg-auth.png')",
+      'course-slider': "url('/img/png/bg-course-slider.png')",
+      'slider-primary': "url('/img/primary.png')",
+    },
     colors: {
-      purple: {
-        100: "#9131751A",
-        300: "#91317580",
-        500: "#913175",
-        700: "#91317533"
-      },
       turquoise: {
         100: "#1EBFBB1A",
         300: "#1EBFBB80",
@@ -55,8 +54,13 @@ export default {
         700: '#555555'
       },
       blue: {
-        100: '#369FFF',
-        300: '#0071B1'
+        100: "#E9EFF2",
+        200: "#2980B940",
+        300: "#2980B9",
+        500: "#003355",
+        600: "#0078C7",
+        700: "#1000CB",
+        900: "#001827"
       },
       black: '#000',
       white: '#fff',

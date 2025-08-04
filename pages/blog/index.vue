@@ -19,7 +19,7 @@ useInfiniteScrollObserver(observerTarget, dataBlog.loadNextPage)
 <template>
     <NuxtLayout name="blog">
         <div class="container-blog">
-            <h1 class="text-lg text-purple-500 font-semibold -mt-4">
+            <h1 class="text-lg text-blue-500 font-semibold -mt-4">
                 {{ $t('my_account.blog.title') }}
             </h1>
             <div ref="observerTarget" v-if="dataBlog.loading" class="container-card">

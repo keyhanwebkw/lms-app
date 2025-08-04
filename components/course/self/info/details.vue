@@ -58,7 +58,7 @@ const itemsList = computed(() => [
       </div>
 
       <!-- Course Status -->
-      <div class="item-box text-white" :class="statusClass">
+      <div class="item-box bg-blue-300 text-white" :class="statusClass">
         <IconStatusCourse />
         <span>{{ t(`course.detailsCourse.${status}`) }}</span>
       </div>

@@ -35,7 +35,7 @@ const toggleText = () => {
 
 <template>
   <div class="container-read-more">
-    <div>
+    <div v-if="title">
       <BaseTitle type="icon" :icon="icon" :title="title" />
     </div>
 
@@ -54,7 +54,7 @@ const toggleText = () => {
         @click="toggleText"
         type="button"
         type-design="action"
-        custom-design="bg-purple-100 !text-purple-500"
+        custom-design="bg-blue-300 !text-white"
         :text="isExpanded ? $t('global.close') : $t('global.read_more')"
       />
     </div>

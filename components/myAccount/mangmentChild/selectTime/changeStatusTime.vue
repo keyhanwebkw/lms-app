@@ -41,7 +41,7 @@ function onCheckedChange(event:any) {
 }
 
 input:checked+.slider {
-    @apply bg-purple-500
+    @apply bg-blue-500
 }
 
 input:focus+.slider {

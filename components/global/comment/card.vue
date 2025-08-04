@@ -30,7 +30,7 @@ function handleSendParentID(id: number, content: string,author:string) {
         </div>
         <div class="comment-actions">
           <div v-if="isAdmin" class="comment-admin-label bg-turquoise-500">{{ $t('global.manager') }}</div>
-          <div class="comment-admin-label bg-purple-500 cursor-pointer"
+          <div class="comment-admin-label bg-blue-500 cursor-pointer"
             @click="handleSendParentID(dataList.ID, dataList.content,dataList.author)">{{ $t('global.answer') }}</div>
         </div>
       </div>
@@ -60,7 +60,7 @@ function handleSendParentID(id: number, content: string,author:string) {
             </div>
             <div class="comment-actions !-mt-4" v-if="depth == 0">
               <div v-if="isAdmin" class="comment-admin-label bg-turquoise-500">{{ $t('global.manager') }}</div>
-              <div class="comment-admin-label bg-purple-500 cursor-pointer"
+              <div class="comment-admin-label bg-blue-500 cursor-pointer"
                 @click="handleSendParentID(dataList.ID, dataList.content,dataList.author)">{{ $t('global.answer') }}</div>
             </div>
           </div>

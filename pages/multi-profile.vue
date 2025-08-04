@@ -20,7 +20,7 @@
 <style scoped>
 
 .container-info span {
-    @apply text-purple-500 font-bold
+    @apply text-blue-500 font-bold
 }
 
 .container-info p {

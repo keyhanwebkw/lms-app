@@ -109,12 +109,12 @@ const btnText = computed(() => props.hasMore ? t('course.quizze.next') : t('cour
 }
 
 .checkbox-box.selected {
-    @apply border-purple-500 text-purple-500
+    @apply border-blue-500 text-blue-500
 }
 
 
 .option-label.selected {
-    @apply text-purple-500
+    @apply text-blue-500
 }
 
 

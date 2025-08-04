@@ -36,7 +36,7 @@ defineProps<DataCardCourse>()
                 </div>
             </div>
             <div>
-                <span class="text-purple-500 font-bold">{{ separate(dataList.price) }} {{ $t('global.unit') }}</span>
+                <span class="text-blue-500 font-bold">{{ separate(dataList.price) }} {{ $t('global.unit') }}</span>
             </div>
         </div>
     </div>

@@ -46,14 +46,14 @@ watch(
 }
 
 .checkout-button {
-    @apply border-[1px] border-purple-500 text-purple-500 px-[16px] py-[10px] rounded-[25px] cursor-pointer font-semibold
+    @apply border-[1px] border-blue-500 text-blue-500 px-[16px] py-[10px] rounded-[25px] cursor-pointer font-semibold
 }
 
 .checkout-button.active {
-    @apply bg-purple-500 text-white
+    @apply bg-blue-500 text-white
 }
 
 .divider {
-    @apply w-5 h-[1px] mr-[10px] bg-purple-500
+    @apply w-5 h-[1px] mr-[10px] bg-blue-500
 }
 </style>

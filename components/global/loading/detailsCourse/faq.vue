@@ -23,7 +23,7 @@
 
 <style scoped>
 .title {
-    @apply flex gap-x-3 border-b-2 pb-2 items-center border-purple-500
+    @apply flex gap-x-3 border-b-2 pb-2 items-center border-blue-500
 }
 
 .container-faq {
