@@ -48,3 +48,11 @@ useInfiniteScrollObserver(observerTarget, coursesListStore.loadNextPage)
         </div>
     </NuxtLayout>
 </template>
+
+<style scoped>
+
+.container-card {
+    @apply w-full grid grid-cols-2 sm:grid-cols-2 gap-4;
+}
+
+</style>
