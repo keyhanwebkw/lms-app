@@ -20,14 +20,16 @@ const route = useRoute();
 
 <style scoped>
 .container-menu{
-   @apply fixed bottom-5 left-0 w-full flex justify-center px-4 z-50 
+   @apply fixed bottom-0 left-0 w-full flex justify-center  z-50 
 }
 
 .box-menu{
-    @apply w-full max-w-[380px] bg-[rgba(225,223,223,0.5)] backdrop-blur-sm shadow-primary h-[50px] rounded-[25px] flex items-center justify-between px-5 text-blue-500
+    @apply w-full max-w-[480px]  bg-white  shadow-primary h-[60px]  flex items-center justify-between px-5 text-blue-500 rounded-t-primary shadow-[0px_-2px_4px_0px_#00000026];
 }
 
 .active-class{
-    @apply w-[40px] rounded-full  flex items-center justify-center  h-10 bg-blue-500
+    @apply w-[40px] p-1 rounded-sm flex items-center justify-center  h-10 bg-[#94AAB840] border-b-[3px] border-[#0078C7] shadow-[0px_2px_3px_0px_#2980B940]; 
+
+
 }
 </style>

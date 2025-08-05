@@ -46,7 +46,7 @@ export default {
 
     },
     pages: {
-        'auth-enter-phone___fa-IR': 'به اپلیکیشن کودک خوش آمدید',
+        'auth-enter-phone___fa-IR': 'خوش آمدید.',
         'auth-validation___fa-IR': 'اعتبارسنجی',
         'auth-set-profile___fa-IR': 'تکمیل پروفایل',
         'auth-set-profile-child___fa-IR': 'تکمیل اطلاعات فرزند',
@@ -172,8 +172,8 @@ export default {
         category_learn: 'دسته بندی آموزش ها',
     },
     auth: {
-        phone_parent: 'شماره همراه پدر یا مادر',
-        description_enter_phone: 'لطفا جهت ورود به اپلیکیشن کودک شماره تلفن خود را وارد کنید',
+        phone_parent: 'شماره همراه',
+        description_enter_phone: ' coach 2 , دری به دنیای یادگیری.',
         login_app: 'ورود به اپلیکیشن',
         accepting_personal_privacy: ' به معنای پذیرفتن حریم خصوصی است.',
         resend_code: 'ارسال مجدد کد',

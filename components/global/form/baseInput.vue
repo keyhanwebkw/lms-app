@@ -32,8 +32,8 @@ const inputValue = computed({
 })
 
 const borderInputData = ref({
-  defult: 'border-colorGray300',
-  focus: 'border-blue-300',
+  defult: 'border-[#2980B9]',
+  focus: 'border-[#2980B9]',
   disabled: '',
   error: '!border-red-500',
 })
@@ -73,7 +73,7 @@ const handleInputUpdate = (e: Event) => {
   <div class="container-input">
     <label v-if="label" :for="id" class="label-input">
       {{ label }}
-      <span v-if="mandatory">*</span>
+      <span v-if="mandatory" class="text-red-500">*</span>
       <span class="mr-[2px]" v-if="optional">({{ $t('global.optional') }})</span>
     </label>
 
@@ -111,8 +111,14 @@ const handleInputUpdate = (e: Event) => {
 <style scoped>
 @import url('~/assets/css/form.css');
 
+
 .container-input {
   @apply w-full flex flex-col relative gap-y-1;
+}
+
+.input-global {
+  border-radius: 12px !important;
+  border-color: #2980B9 !important;
 }
 
 .input-floating-icon {

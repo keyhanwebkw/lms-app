@@ -1,33 +1,28 @@
 export const menu = [
     {
         ID: 1,
-        icon: 'Notif',
-        icon_active: 'NotifActive',
-        slug: '/my-account/notification',
+        icon: 'Description',
+        icon_active: 'Description',
+        slug: '/blog'
     },
     {
         ID: 2,
-        icon: 'Description',
-        icon_active: 'DescriptionActive',
-        slug: '/blog'
+        icon: 'Course',
+        icon_active: 'Course',
+        slug: '/categories'
     },
     {
         ID: 3,
         icon: 'Home',
-        icon_active: 'HomeActive',
+        icon_active: 'Home',
         slug: '/',
         class: true
     },
+    
     {
         ID: 4,
-        icon: 'Course',
-        icon_active: 'CourseActive',
-        slug: '/categories'
-    },
-    {
-        ID: 5,
         icon: 'User',
-        icon_active: 'UserActive',
+        icon_active: 'User',
         slug: '/my-account'
     },
 

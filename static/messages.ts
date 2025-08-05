@@ -33,6 +33,5 @@ export const messages = {
     notHaveAccessSection: 'لطفا قسمت های قبل را  به اتمام برسانید.',
     answerRequired: 'لطفاً گزینه‌ای را انتخاب کنید.',
     errorMaxAttemptReached: 'تعداد تلاش‌های شما به حدنصاب رسیده است.',
-    notHaveAccessSection:'لطفا قسمت های قبل را  به اتمام برسانید .'
 
 }
