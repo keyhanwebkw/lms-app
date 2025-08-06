@@ -87,6 +87,7 @@ export interface TypeCardSliderCourse {
     loading?: boolean
 }
 interface TypeDetailsCardCourse {
+    name: any
     ID: number | string
     image_cover: string
     title: string
@@ -102,6 +103,8 @@ interface TypeDetailsCardCourse {
 }
 
 interface DetailsTeacher {
+    name: any
+    family: any
     full_name: string
     id: number
 }

@@ -6,7 +6,7 @@ const config = useRuntimeConfig()
 const props = defineProps<{ course: DetailsCoursesList }>()
 
 const courseBanner = computed(() => {
-    return props.course.banner ? `${config.public.storage.thumbnail}${props.course.banner.fullSID}` : '/img/notFound.webp'
+    return props.course.banner ? `${config.public.storage.thumbnail}${props.course.banner.fullSID}` : '/img/banner.webp'
 })
 
 </script>

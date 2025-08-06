@@ -7,42 +7,78 @@ const props = defineProps<DataCardBlog>()
 const resultTime = GenerateDate({ timestamp: props.dataList.created_at, type: 'numberDate' })
 </script>
 <template>
-    <div class="w-[290px] h-auto relative pb-3 bg-blue-900 rounded-[30px] flex flex-col ">
-        <!-- img blog  -->
-        <NuxtLink :to="{name:'blog-slug___fa-IR' , params:{slug:dataList.slug}}" class="w-full h-[210px] ">
-            <NuxtImg :src="dataList.image" :alt="dataList.name" class="w-full h-full rounded-t-[28px] " />
-        </NuxtLink>
-        <!-- content clog  -->
-        <div class="flex flex-col ">
-            <div class="text-white text-sm py-3 border-b-[1px] border-white">
-                <div class="px-5 flex flex-col gap-y-2  ">
-                    <!-- title blog  -->
-                    <NuxtLink  :to="{name:'blog-slug___fa-IR' , params:{slug:dataList.slug}}">{{ dataList.translations[0].title }}</NuxtLink>
-                    <!-- discription blog  -->
-                    <p class="text-[10px] leading-4 " style="color:white !important" v-html="limitWord({ sentens: dataList.translations[0].description, count: 20 })">
-                    </p>
-                </div>
+      <div class="card-blog my-1 w-full ">
+        <NuxtLink :to="{name:'blog-slug___fa-IR' , params:{slug:dataList.slug}}" class="container-card-blog">
+            <div class="img-container">
+                <div v-if="dataList.image">
+                  <!-- <NuxtImg :src="`${$config.public.storage.thumbnail}${dataList.image}`" :alt="dataList.translations[0].title" /> -->
+                    <img src="/public/img/banner.webp" alt="">
+                </div> <NuxtImg src="/public/img/banner.webp" alt="img thumbnail" class="w-full h-[178px] rounded-primary" v-else />
+
             </div>
-            <div class="w-full  flex justify-between px-5 mt-3">
-                <!--  name  -->
-                <div class="text-white flex gap-x-1">
-                    <IconUser class="text-white " />
-                    <span>
-                        {{ dataList.author.full_name }}
+            <div class="container-content second-gap">
+                <div>
+                    <span class="title-blog">{{ limitWord({ sentens: dataList.translations[0].title, count: 7 }) }}</span>
+                </div>
+                <!-- <div class="container-category" >
+                    <div class="item-category" >
+                        {{ dataList. }}
+                    </div>
+                </div> -->
+                <div class="container-bottom-card">
+                    <span class="view-more">
+                        {{ $t('global.view_more') }}
+                    </span>
+                    <span class="study-time">
+                        {{ resultTime }} 
                     </span>
                 </div>
-                <!-- count blog  -->
-                <div class="text-[#0CFF5F] flex items-center gap-x-1">
-                    <span>{{ dataList.enable_comment }}</span>
-                    <NuxtImg src="/img/svg/comment-blog.svg" alt="" class="w-[15px]" />
-
-                </div>
             </div>
-        </div>
-        <!-- date  -->
-        <div
-            class="w-[100px] h-[30px] bg-[#003355] flex items-center justify-center text-white rounded-300 pt-1 absolute top-4 right-4">
-            {{ resultTime }}
-        </div>
+        </NuxtLink>
     </div>
 </template>
+
+<style scoped>
+
+
+
+.container-card-blog {
+    @apply  flex flex-col gap-y-3 rounded-sm p-2 bg-white shadow-primary
+}
+
+.container-card-blog .img-container {
+    @apply w-full h-full
+}
+
+.container-card-blog .img-container img {
+    @apply w-full h-full rounded-sm object-cover
+}
+
+.container-card-blog .title-blog {
+    @apply text-sm font-bold
+}
+
+.container-card-blog .container-content {
+    @apply w-full flex flex-col justify-between py-1 gap-y-0
+}
+
+.container-card-blog .container-category {
+    @apply flex gap-x-3 justify-center text-center
+}
+
+.container-category .item-category {
+    @apply px-4 py-1 rounded-full  text-[10px] text-blue-500 -mt-3
+}
+
+.container-card-blog .container-bottom-card {
+    @apply w-full flex flex-row gap-y-2 justify-between items-center mt-3
+}
+
+.container-card-blog .view-more {
+    @apply text-xs text-blue-500
+}
+
+.container-card-blog .study-time {
+    @apply text-xs text-gray-500
+}
+</style>
