@@ -58,19 +58,31 @@ useInfiniteScrollObserver(observerTargetRelated, handleListRelated)
     <div v-else>
       <!-- info -->
       <div class="container-box-info-details-course">
+         <!-- details above video -->
+        <div class="w-full -mb-5  flex gap-x-4 justify-end ">
+          <div class=" bg-white text-blue-300  border-blue-300 justify-center text-center rounded-full text-xs ">
+            <span>{{ dataCourse.detailsCourse.category.title }}</span>
+          </div>
+          <div class="p-1 px-3 bg-white text-blue-300 border border-blue-300 justify-center text-center rounded-full text-xs ">
+
+            <span>{{ $t(`course.detailsCourse.${dataCourse.detailsCourse.status}`) }}</span>
+          </div>
+        </div>
         <!-- video -->
         <div class="container-center-item">
           <CourseSelfInfoVideo />
         </div>
         <!-- details -->
         <div class="w-full">
-          <CourseSelfInfoDetails :status="dataCourse.detailsCourse.status"
-            :category="dataCourse.detailsCourse.category.title" :title="dataCourse.detailsCourse.name"
-            :duration="dataCourse.detailsCourse.duration" :type="dataCourse.detailsCourse.type"
-            :teacher="dataCourse.detailsCourse.teacher" />
+            <span class="font-bold text-base">{{ $t(`${dataCourse.detailsCourse.name}`) }}</span>
         </div>
+        <!-- read more -->
+        <div id="description_course">
+          <ReadMore :full-text="dataCourse.detailsCourse.description"  :max-words="90" />
+        </div>
+
         <!-- price -->
-        <div class="container-center-item">
+        <div class="container-center-item border-t-2 border-blue-300">
           <CourseSelfInfoPrice :discountAmount="dataCourse.detailsCourse.discountAmount"
             :discount-percentage="dataCourse.detailsCourse.discountPercentage"
             :price="dataCourse.detailsCourse.price" />
@@ -82,19 +94,22 @@ useInfiniteScrollObserver(observerTargetRelated, handleListRelated)
           </div>
         </div>
       </div>
+      <!-- Features -->
+       <div class="w-full">
+        <BaseTitle class="my-5" type="icon" icon="Course" :title="$t('ویژگی های دوره')" />
+        <CourseSelfInfoDetails 
+            :duration="dataCourse.detailsCourse.duration"
+            :type="dataCourse.detailsCourse.type"
+            :teacher="dataCourse.detailsCourse.teacher" />
+       </div>
       <!-- main -->
       <div class="container-main-course-details">
         <!-- menu -->
-        <div class="menu-main">
+        <!-- <div class="menu-main">
           <NuxtLink :to="data.slug" v-for="data in menuDetailsCourse" :key="data.ID">
             {{ $t(`course.detailsCourse.${data.title}`) }}
           </NuxtLink>
-        </div>
-        <!-- read more -->
-        <div id="description_course">
-          <ReadMore :full-text="dataCourse.detailsCourse.description" icon="Description"
-            :title="$t('course.detailsCourse.description_course')" :max-words="90" />
-        </div>
+        </div> -->
         <!-- item course  -->
         <div class="container-course" id="headline_course">
           <BaseTitle type="icon" icon="Course" :title="$t('course.detailsCourse.headline_course')" />
@@ -113,6 +128,19 @@ useInfiniteScrollObserver(observerTargetRelated, handleListRelated)
           <div class="flex flex-col gap-y-4" v-else>
             <BaseTitle type="icon" icon="Faq" :title="$t('course.detailsCourse.faq')" />
             <CourseSelfMainFaq :data-faq="data" v-for="data in dataFaq.listFaq" :key="data.ID" />
+          </div>
+        </div>
+
+        <!-- Related content -->
+
+        <div class="w-full" ref="observerTargetRelated">
+          <div v-if="dataCourse.loadingRelated" class="container-card">
+            <BaseTitle type="icon" icon="CustomerComment" :title="$t('course.detailsCourse.related_courses')" />
+            <LoadingCourseCard v-for="(_, index) in 3" :key="index" />
+          </div>
+          <div class="container-related-course" v-else-if="dataCourse.lisRelated.length > 0">
+            <BaseTitle type="icon" icon="Related" :title="$t('course.detailsCourse.related_courses')" />
+            <CourseSelfMainRelated :data-list="dataCourse.lisRelated" />
           </div>
         </div>
 
@@ -148,18 +176,7 @@ useInfiniteScrollObserver(observerTargetRelated, handleListRelated)
           </div>
         </div>
 
-        <!-- Related content -->
-
-        <div class="w-full" ref="observerTargetRelated">
-          <div v-if="dataCourse.loadingRelated" class="container-card">
-            <BaseTitle type="icon" icon="CustomerComment" :title="$t('course.detailsCourse.related_courses')" />
-            <LoadingCourseCard v-for="(_, index) in 3" :key="index" />
-          </div>
-          <div class="container-related-course" v-else-if="dataCourse.lisRelated.length > 0">
-            <BaseTitle type="icon" icon="Related" :title="$t('course.detailsCourse.related_courses')" />
-            <CourseSelfMainRelated :data-list="dataCourse.lisRelated" />
-          </div>
-        </div>
+        
       </div>
     </div>
   </div>
@@ -167,15 +184,15 @@ useInfiniteScrollObserver(observerTargetRelated, handleListRelated)
 
 <style scoped>
 .container-box-info-details-course {
-  @apply w-full px-4 py-5 bg-blue-500 flex flex-col gap-y-5 mt-3;
+  @apply w-full px-4 py-5  flex flex-col gap-y-5 mt-3;
 }
 
 .container-box-info-details-course .container-center-item {
-  @apply w-full flex justify-center mt-2;
+  @apply w-full flex justify-start mt-2;
 }
 
 .container-add-to-cart .box-price {
-  @apply w-full py-3 font-semibold rounded-primary flex items-center justify-center text-sm max-w-[300px] bg-white text-blue-500;
+  @apply w-full py-3 font-semibold rounded-full flex items-center justify-center text-sm  bg-[#2980B9] text-white;
 }
 
 .container-box-info-details-course .container-add-to-cart {

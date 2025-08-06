@@ -33,7 +33,7 @@
 }
 
 .category-carousel-container .category-item {
-    @apply min-w-max px-4 h-10 text-sm font-semibold text-center text-blue-500 bg-blue-100 rounded-sm flex items-center
+    @apply min-w-max px-4 h-10 text-sm font-semibold text-center text-blue-300 bg-white rounded-full flex items-center border border-blue-300
 }
 
 .category-carousel-container .category-item a {
@@ -41,5 +41,5 @@
 }
 
 .active-category {
-    @apply !bg-blue-500 !text-white
+    @apply !bg-[#2980B9CC] !text-white
 }

@@ -20,23 +20,36 @@ const courseBanner = computed(() => {
             </div>
             <div class="w-full flex flex-col gap-y-3 py-3 pl-2 p-2">
                 <div>
-                    <span class="font-bold text-sm text-blue-500 ">{{ course.name }}</span>
+                    <span class="font-bold text-sm text-blue-500 course-name-limit">{{ course.name }}</span>
                 </div>
-                <div class="text-gray-300 flex justify-between items-center gap-x-1 mx-4"> 
+                <div class="text-gray-300 flex justify-between items-center gap-x-1 "> 
                     <span class="text-xs">{{ course.teacher.name }}{{ course.teacher.family }}</span>
-                    <div class="text-red-500 flex items-center gap-x-1">
+                    <div class="text-gray-300 flex items-center gap-x-1">
                         
                         <div class="text-xs flex gap-x-1"><span>{{ course.duration }}</span><span>{{
                             $t('global.hour')
                                 }}</span></div>
                     </div>
                 </div>
-                <div class="flex justify-center border border-blue-300 rounded-full py-1 mx-3">
+                <div class="flex justify-center border border-blue-300 rounded-full py-1 ">
                     <span class="font-semibold text-sm text-blue-300 ">{{ separate(course.price) }} {{ $t('global.unit') }}</span>
                     
                 </div>
             </div>
         </NuxtLink>
     </div>
+
 </template>
+
+<style scoped>
+.course-name-limit {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  word-break: break-word;
+}
+</style>
 
