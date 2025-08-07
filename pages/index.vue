@@ -253,100 +253,64 @@ const descriptionVideo = ref<string>(
 
 const dataListBlog = ref([
   {
-    author: { id: 1020, full_name: "test" },
-    author_id: 1020,
-    category: { id: 1, title: "کوچ", slug: "o" },
-    category_id: 1,
-    content: '<p style="margin: 15px 0px 1.3em; padding: 0px; ',
-    created_at: 1731842604,
-    description:
-      "<ul><li>جلسات کوچینگ تیمی برای دست یافتن به یک منشور تیمی استفاده شده و به تیم کمک می‌کند تا عملکرد بهتر و سریع‌تری داشت</li></ul>",
-    enable_comment: 1,
-    ID: 2,
+    ID: 1,
+    name: "اهمیت کوچینگ تیمی",
+    author: {
+      id: 1,
+      full_name: "علیرضا زنگنه",
+    },
+    created_at: 1732131563,
+    slug: "ahmiyat-koching-timi",
     image: "/public/img/banner.webp",
-    meta_description: null,
-    slug: "mozsh-o-n-roh",
-    status: "publish",
-    title: "اهمیت کوچینگ تیمی",
+    enable_comment: 1,
     translations: [
       {
-        blog_id: 2,
-        content: '<p style="margin: 15px 0px 1.3em; padding: 0px; ',
-        description:
-          "<ul><li>جلسات کوچینگ تیمی برای دست یافتن به یک منشور تیمی استفاده شده و به تیم کمک می‌کند تا عملکرد بهتر و سریع‌تری داشت</li></ul>",
-        id: 2,
-        meta_description: null,
         title: "اهمیت کوچینگ تیمی",
+        description:
+          "جلسات کوچینگ تیمی برای دست یافتن به یک منشور تیمی استفاده شده و به تیم کمک می‌کند تا عملکرد بهتر و سریع‌تری داشت",
       },
     ],
-    updated_at: 1736151305,
-    visit_count: 1,
-    name: "علیرضا",
   },
   {
-    author: { id: 1020, full_name: "test" },
-    author_id: 1020,
-    category: { id: 1, title: "کوچ", slug: "o" },
-    category_id: 1,
-    content: '<p style="margin: 15px 0px 1.3em; padding: 0px; ',
-    created_at: 1731842604,
-    description:
-      "<ul><li>جلسات کوچینگ تیمی برای دست یافتن به یک منشور تیمی استفاده شده و به تیم کمک می‌کند تا عملکرد بهتر و سریع‌تری داشت</li></ul>",
-    enable_comment: 1,
     ID: 2,
-    image: "/img/banner3.webp",
-    meta_description: null,
-    slug: "mozsh-o-n-roh",
-    status: "publish",
-    title: "اهمیت کوچینگ تیمی",
+    name: "اهمیت کوچینگ تیمی",
+    author: {
+      id: 1,
+      full_name: "علیرضا زنگنه",
+    },
+    created_at: 1732131563,
+    slug: "ahmiyat-koching-timi",
+    image: "/public/img/banner.webp",
+    enable_comment: 1,
     translations: [
       {
-        blog_id: 2,
-        content: '<p style="margin: 15px 0px 1.3em; padding: 0px; ',
-        description:
-          "<ul><li>جلسات کوچینگ تیمی برای دست یافتن به یک منشور تیمی استفاده شده و به تیم کمک می‌کند تا عملکرد بهتر و سریع‌تری داشت</li></ul>",
-        id: 2,
-        meta_description: null,
         title: "اهمیت کوچینگ تیمی",
+        description:
+          "جلسات کوچینگ تیمی برای دست یافتن به یک منشور تیمی استفاده شده و به تیم کمک می‌کند تا عملکرد بهتر و سریع‌تری داشت",
       },
     ],
-    updated_at: 1736151305,
-    visit_count: 1,
-    name: "علیرضا",
   },
   {
-    author: { id: 1020, full_name: "test" },
-    author_id: 1020,
-    category: { id: 1, title: "کوچ", slug: "o" },
-    category_id: 1,
-    content: '<p style="margin: 15px 0px 1.3em; padding: 0px; ',
-    created_at: 1731842604,
-    description:
-      "<ul><li>جلسات کوچینگ تیمی برای دست یافتن به یک منشور تیمی استفاده شده و به تیم کمک می‌کند تا عملکرد بهتر و سریع‌تری داشت</li></ul>",
+    ID: 3,
+    name: "اهمیت کوچینگ تیمی",
+    author: {
+      id: 1,
+      full_name: "علیرضا زنگنه",
+    },
+    created_at: 1732131563,
+    slug: "ahmiyat-koching-timi",
+    image: "/public/img/banner.webp",
     enable_comment: 1,
-    ID: 2,
-    image: "/img/banner3.webp",
-    meta_description: null,
-    slug: "mozsh-o-n-roh",
-    status: "publish",
-    title: "اهمیت کوچینگ تیمی",
     translations: [
       {
-        blog_id: 2,
-        content: '<p style="margin: 15px 0px 1.3em; padding: 0px; ',
-        description:
-          "<ul><li>جلسات کوچینگ تیمی برای دست یافتن به یک منشور تیمی استفاده شده و به تیم کمک می‌کند تا عملکرد بهتر و سریع‌تری داشت</li></ul>",
-        id: 2,
-        meta_description: null,
         title: "اهمیت کوچینگ تیمی",
+        description:
+          "جلسات کوچینگ تیمی برای دست یافتن به یک منشور تیمی استفاده شده و به تیم کمک می‌کند تا عملکرد بهتر و سریع‌تری داشت",
       },
     ],
-    updated_at: 1736151305,
-    visit_count: 1,
-    name: "علیرضا",
   },
-  
-]);
+])
+
 
 const categoryBlog = ref([
   {
@@ -362,6 +326,7 @@ const categoryBlog = ref([
 ]);
 const DataListCourse = ref([
   {
+    name: "علیرضا زنگنه",
     ID: 1,
     image_cover: "/img/banner3.webp",
     title: "دوره آموزش امنبت وب ",
@@ -371,6 +336,8 @@ const DataListCourse = ref([
     teacher: {
       full_name: "علیرضا زنگنه",
       id: 1,
+      family: "زنگنه",
+      name: "علیرضا زنگنه",
     },
     duration: 20,
     points: 50,
@@ -380,8 +347,9 @@ const DataListCourse = ref([
     slug: "/",
   },
   {
-    ID: 1,
-    image_cover: "/img/banner2.webp",
+    name: "علیرضا زنگنه",
+    ID: 2,
+    image_cover: "/img/banner3.webp",
     title: "دوره آموزش امنبت وب ",
     description:
       "این متن  متن توضیحات برای تست این بخش نوشته شده است  و لطفا جدی نگیرین",
@@ -389,6 +357,8 @@ const DataListCourse = ref([
     teacher: {
       full_name: "علیرضا زنگنه",
       id: 1,
+      family: "زنگنه",
+      name: "علیرضا زنگنه",
     },
     duration: 20,
     points: 50,
@@ -398,8 +368,9 @@ const DataListCourse = ref([
     slug: "/",
   },
   {
-    ID: 1,
-    image_cover: "/img/banner.webp",
+    name: "علیرضا زنگنه",
+    ID: 3,
+    image_cover: "/img/banner3.webp",
     title: "دوره آموزش امنبت وب ",
     description:
       "این متن  متن توضیحات برای تست این بخش نوشته شده است  و لطفا جدی نگیرین",
@@ -407,6 +378,8 @@ const DataListCourse = ref([
     teacher: {
       full_name: "علیرضا زنگنه",
       id: 1,
+      family: "زنگنه",
+      name: "علیرضا زنگنه",
     },
     duration: 20,
     points: 50,
@@ -568,6 +541,7 @@ const dataListBanner = ref([
         <HomeSliderBlog
           page-title=""
           :data-list="dataListBlog"
+          :dataListCategory="[]"
         />
       </div>
         </div>

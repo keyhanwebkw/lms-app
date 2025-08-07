@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Autoplay } from 'swiper/modules';
-import type { TypeCardSliderCourse } from '~/types/home';
+import type { DataSliderCardBlog } from '~/types/home';
 
- defineProps<TypeCardSliderCourse>()
+ defineProps<DataSliderCardBlog>()
 </script>
 
 <template>

@@ -12,7 +12,7 @@
 }
 
 .card-category {
-    @apply w-full h-[70px] rounded-sm flex justify-between pl-5  items-center flex-row gap-x-5 px-1 border-r-[3px] border-r-[#0078C7] shadow-[0px_1px_5px_0px_#00000040]
+    @apply w-full h-[70px] rounded-sm flex flex-row justify-start pr-5  items-center  gap-x-5 px-1 border-r-[3px] border-r-[#0078C7] shadow-[0px_1px_5px_0px_#00000040]
 }
 
 .main-card-category {
