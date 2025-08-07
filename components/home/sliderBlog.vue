@@ -1,18 +1,27 @@
 <script setup lang="ts">
-import type { DataSliderCardBlog } from '~/types/home';
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import { Autoplay } from 'swiper/modules';
+import type { TypeCardSliderCourse } from '~/types/home';
 
- defineProps<DataSliderCardBlog>()
+ defineProps<TypeCardSliderCourse>()
 </script>
 
 <template>
-    <Swiper class="w-full py-3 " :pagination="true" :slides-per-view="1" :loop="true" :autoplay="{
-        delay: 4000,
-        disableOnInteraction: false,
-    }" :space-between="10">
-          <SwiperSlide v-for="data in dataList" :key="data.ID" class="w-full flex justify-center">
-                <HomeCardBlog :data-list="data" :data-list-category="dataListCategory" />
-            </SwiperSlide>
+    <Swiper class="container-swiper" :modules="[Autoplay]" :pagination="true" :slides-per-view="2" :loop="true"
+        :autoplay="{
+            delay: 3000,
+            disableOnInteraction: false
+        }" :space-between="10" :breakpoints="{
 
+        }">
+        <SwiperSlide v-for="data in dataList" :key="data.ID" class=" pr-1 !flex justify-center ">
+            <HomeCardBlog :data-list="data" :key="data.ID" />
+        </SwiperSlide>
     </Swiper>
 </template>
 
+<style scoped>
+.container-swiper {
+    @apply w-full py-3 px-2 flex justify-center;
+}
+</style>

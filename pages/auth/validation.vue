@@ -47,10 +47,11 @@ function handleDelete(event: Event) {
                 </div>
                 <div class="options-box">
                     <!-- edit phone -->
-                    <div class="w-full">
+                    <div class="w-full flex flex-row gap-x-1">
                         <NuxtLink to="/auth/enter-phone" class="text-gray-300 text-xs underline">{{
                             $t('auth.wrong_number') }}
                         </NuxtLink>
+                        <IconEdit class="text-gray-300 cursor-pointer" />
                     </div>
                     <!-- resend code  -->
                     <div class="resend-code-box">
@@ -60,7 +61,7 @@ function handleDelete(event: Event) {
                             <span>{{ $t('auth.resend_code')
                             }}</span>
                         </div>
-                        <div v-else @click="verifyPhoneStore.resendCode" class="text-blue-500 cursor-pointer">
+                        <div v-else @click="verifyPhoneStore.resendCode" class="text-blue-50 cursor-pointer">
                             {{
                                 $t('auth.resend_code')
                             }}
@@ -85,7 +86,7 @@ function handleDelete(event: Event) {
 }
 
 .container-verify-phone-page .options-box {
-    @apply w-full flex justify-between -mt-4 px-2
+    @apply w-full flex justify-between -mt-2 px-2 mb-6 
 }
 
 .container-verify-phone-page .resend-code-box {

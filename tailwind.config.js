@@ -54,6 +54,7 @@ export default {
         700: '#555555'
       },
       blue: {
+        50:"#2980B9CC",
         100: "#E9EFF2",
         200: "#2980B940",
         300: "#2980B9",
@@ -69,7 +70,8 @@ export default {
       none: "0px",
       primary: '12px',
       sm: '5px',
-      full: '9999px'
+      full: '9999px',
+      md: '30px',
     },
     boxShadow: {
       'primary': '0 0 2px 0 rgba(0,0,0,0.25)',

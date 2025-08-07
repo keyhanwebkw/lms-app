@@ -11,7 +11,7 @@ button:disabled {
 }
 
 .btn-submit {
-    @apply w-full h-10 text-white text-sm bg-blue-500 rounded-primary
+    @apply w-full h-10 text-white text-sm bg-blue-50 rounded-md border border-blue-300
 }
 
 .base-btn-action {
@@ -35,5 +35,5 @@ button:disabled {
 }
 
 .loader-btn {
-  @apply w-5 h-5 border-2  border-white rounded-full animate-spin;
+  @apply font-bold w-5 h-5 border-2  border-white rounded-full animate-spin text-white ;
 }

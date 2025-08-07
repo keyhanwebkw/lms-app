@@ -7,7 +7,7 @@ import type { TypeCardSliderCourse } from '~/types/home';
 </script>
 
 <template>
-    <Swiper class="container-swiper" :modules="[Autoplay]" :pagination="true" :slides-per-view="1" :loop="true"
+    <Swiper class="container-swiper" :modules="[Autoplay]" :pagination="true" :slides-per-view="2" :loop="true"
         :autoplay="{
             delay: 3000,
             disableOnInteraction: false
@@ -16,7 +16,6 @@ import type { TypeCardSliderCourse } from '~/types/home';
         }">
         <SwiperSlide v-for="data in dataList" :key="data.ID" class=" pr-1 !flex justify-center ">
             <HomeCardCourse :data-list="data" :key="data.ID" />
-
         </SwiperSlide>
     </Swiper>
 </template>

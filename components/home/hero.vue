@@ -12,7 +12,7 @@ const props = defineProps<DataHeroHomePage>()
 <template>
     <div class="hero-container">
         <div>
-            <BaseTitleSection :title="title" icon="certificate.svg" />
+            <BaseTitleSection :title="title" icon="../yegane.png"  />
         </div>
         <ReadMore :full-text="description" :max-words="40"/>
     </div>

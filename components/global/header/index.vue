@@ -5,6 +5,7 @@ const userAuth = CheckUserAuth()
 
 const handleSwitchUser = computed(() => userAuth.hasToken ? '/my-account' : '/auth/enter-phone')
 
+
 </script>
 
 <template>
@@ -16,8 +17,17 @@ const handleSwitchUser = computed(() => userAuth.hasToken ? '/my-account' : '/au
             <Logo />
         </div>
         <div class="flex gap-x-4">
-            <BaseBtn type="button" type-design="icon" icon="/img/userProfile.svg" :loading="false"
-                @click="$router.push(handleSwitchUser)" />
+            <!-- <BaseBtn type="button" type-design="icon" icon="/img/userProfile.svg" :loading="false" class="m-1"
+                @click="$router.push(handleSwitchUser)" /> -->
+                
+                 <BaseBtn
+                type="button"
+                type-design="icon"
+                icon="/img/notif.svg"
+                :loading="false"
+                class="m-1"
+                @click="$router.push('/my-account/notification')"
+            />
             <!-- logout -->
             <!-- <BaseBtn type="button" type-design="icon" icon="/img/logout~.png" :loading="false"  @click="$router.push('/')"/> -->
         </div>

@@ -17,13 +17,13 @@ const routeName = computed(() => String(route.name))
     <div class="auth-layout">
         <div class="content-auth-page">
             <div class="img-container">
-                <NuxtImg src="/img/auth.webp" alt="avatar" />
+                <NuxtImg src="/img/auth.jpg" alt="avatar" />
             </div>
             <div>
-                <span class="font-semibold text-blue-500">{{ $t(`pages.${routeName}`) }}</span>
+                <span class="font-bold text-lg text-blue-600">{{ $t(`pages.${routeName}`) }}</span>
             </div>
             <div>
-                <p class="text-xs text-gray-300 text-center">{{ description }}</p>
+                <p class="font-semibold text-md text-gray-300 text-center">{{ description }}</p>
             </div>
         </div>
         <form @submit.prevent="$emit('submitForm')">
@@ -44,11 +44,11 @@ const routeName = computed(() => String(route.name))
 }
 
 .auth-layout form {
-    @apply w-full flex flex-col gap-y-6
+    @apply w-full flex flex-col gap-y-4
 }
 
 .content-auth-page .img-container {
-    @apply w-[97px] h-[97px]
+    @apply w-full h-full
 }
 
 .content-auth-page .img-container img {

@@ -18,12 +18,12 @@ dataSendOTPSotre.clearData()
                 </div>
             </template>
         </NuxtLayout>
-        <div class="container-check-box">
+        <!-- <div class="container-check-box">
             <div class="font-semibold text-xs">
                 <span class="text-blue-500">{{ $t('auth.login_app') }}</span>
                 <span class="">{{ $t('auth.accepting_personal_privacy') }}</span>
             </div>
-        </div>
+        </div> -->
     </div>
 </template>
 

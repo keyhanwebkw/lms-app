@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div>2
         <div class="w-full h-auto flex gap-x-3 items-centerrounded-sm bg-white shadow-primary p-2 py-3 rounded-sm">
             <div class="w-[260px] h-[120px] rounded-sm card_box_loading">
             </div>

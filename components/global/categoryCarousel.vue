@@ -60,11 +60,11 @@ const pushToAllPage = () => {
 </template>
 
 <style scoped>
-::-webkit-scrollbar {
-    @apply w-5 bg-gray-50 rounded-full h-2
+.category-carousel-container {
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
 }
-
-::-webkit-scrollbar-thumb {
-    @apply bg-blue-500 rounded-primary
+.category-carousel-container::-webkit-scrollbar {
+  display: none; 
 }
 </style>

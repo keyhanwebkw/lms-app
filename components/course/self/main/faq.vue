@@ -12,12 +12,13 @@ const active = computed(() => self.activeFaq == props.dataFaq.ID)
 <template>
     <div class="container-faq">
         <!-- question -->
-        <div class="container-question" @click="self.handleActiveFaq(dataFaq.ID)">
+        <div class="container-question" @click="self.handleActiveFaq(dataFaq.ID)"
+        :class="active ? 'border border-[#E8E8E8] rounded-b-none rounded-t-sm ' : 'shadow-[0px_1px_5px_0px_#00000026] rounded-sm'">
             <div class="content" :class="active ? 'text-blue-500' : 'text-gray-500'">
-                <div class="flex justify-center">
+                <!-- <div class="flex justify-center">
                     <IconItemFaq />
                     <div class="line" :class="active ? 'bg-blue-500' : 'bg-gray-500'"></div>
-                </div>
+                </div> -->
                 <span>{{ dataFaq.question }}</span>
             </div>
             <div class="box-arrow"
@@ -40,11 +41,11 @@ const active = computed(() => self.activeFaq == props.dataFaq.ID)
 
 <style scoped>
 .container-faq {
-    @apply w-full flex flex-col gap-y-3
+    @apply w-full flex flex-col 
 }
 
 .container-question {
-    @apply w-full py-4 px-5 flex justify-between items-center rounded-sm shadow-primary cursor-pointer
+    @apply w-full py-4 px-5 flex justify-between items-center  cursor-pointer m-0
 }
 
 
@@ -65,7 +66,7 @@ const active = computed(() => self.activeFaq == props.dataFaq.ID)
 }
 
 .container-answer {
-    @apply w-full h-auto min-h-[70px] flex items-center px-5 rounded-sm shadow-primary
+    @apply w-full h-auto min-h-[70px] flex items-center px-5 rounded-sm border border-[#E8E8E8] border-t-0 rounded-t-none
 }
 
 .container-answer p {

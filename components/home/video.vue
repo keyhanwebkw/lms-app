@@ -4,20 +4,20 @@ import type { DataSectionVideo } from '~/types/home';
 const props = defineProps<DataSectionVideo>()
 </script>
 <template>
-    <div class="w-full relative  flex flex-col gap-y-10 justify-between">
+    <div class="w-full relative  flex flex-col gap-y-4 justify-between">
         <div class="flex flex-col gap-y-5 ">
             <!-- title -->
             <div>
-                <BaseTitleSection :title="title" icon="certificate.svg" />
+                <BaseTitleSection :title="title" icon="" class="font-bold text-xl text-blue-500 justify-center mt-12" />
             </div>
             <!-- description -->
-            <div>
+            <!-- <div>
                 <p class="text-sm leading-8 text-justify ">
                     {{ description }}
                 </p>
-            </div>
+            </div> -->
             <!-- information -->
-            <div class="w-full  flex flex-col  gap-y-4   gap-x-7">
+            <!-- <div class="w-full  flex flex-col  gap-y-4   gap-x-7">
                 <div class="flex gap-x-2" v-for="data in feature" :key="data.id">
                     <div class="w-[60px] h-[60px] rounded-full bg-blue-300 flex justify-center items-center p-1">
                         <NuxtImg :src="data.icon" :alt="data.title" class="rounded-full"/>
@@ -27,7 +27,7 @@ const props = defineProps<DataSectionVideo>()
                         <span class="text-sm">{{ data.description }}</span>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="w-full flex justify-center  ">
             <video controls class="w-full rounded-primary">
