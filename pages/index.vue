@@ -514,7 +514,7 @@ const dataListBanner = ref([
         :feature="secendStatictis"
       />
     </div>
-
+    
     <!-- quick_access -->
 
     <!-- <div class="conatainer-item">
@@ -549,12 +549,12 @@ const dataListBanner = ref([
     <!-- <div class="w-full">
       <HomeSliderFeature :data-list-feature="statictis" />
     </div> -->
-
+<!-- 
     <div class="w-full">
       <BaseTitle class="my-5 font-bold text-lg" type="icon" icon="Course" :title="$t('رزرو جلسه آموزشی')" />
       <HomeBookMeeting
         title=""  background="/img/images.jpg"  link="/" :description="descriptionVideo"/>
-    </div>
+    </div> -->
 
     <div class="w-full">
       <BaseTitle class="my-5 font-bold text-lg" type="icon" icon="Course" :title="$t('سوالات متداول')" />
