@@ -31,7 +31,7 @@ button:disabled {
 }
 
 .btn-cancle{
-    @apply  w-full h-10 text-blue-500 text-sm bg-blue-700 rounded-primary
+    @apply  w-full h-10 text-blue-500 text-sm bg-[#efefef] rounded-full
 }
 
 .loader-btn {
